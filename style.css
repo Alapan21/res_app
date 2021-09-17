@@ -48,8 +48,10 @@ header {
   position: fixed;
   top: 0rem;
   width: 100vw;
-  margin-top: 2rem;
+  margin-top: 0rem;
   z-index: 100;
+  background-color: white;  
+  padding: 2rem 0;
 }
 .root {
   margin: 0 10rem;
