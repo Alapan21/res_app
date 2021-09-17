@@ -1,67 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feastzilla Website Design</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Feastzilla Website Design </title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <section class="header">
-        <nav>
-            <a href="index.html"><img src="Images/Logo.png" alt="Logo"></a>
-            <div class="nav-links">
-                <ul>
-                    <li><a href=" ">Home</a></li>
-                    <li><a href=" ">About Us</a></li>
-                    <li><a href=" ">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="text-box">
-            <h1>Deliciousness</h1>
-            <h2>In Every Bite!</h2>
-            <p>Providing you with the best of our services.</p>
-            <a href="" class="btn"><img src="Images/Button.png" alt="Button"></a>
+  <body>
+    <!--Navigation-->
+    <header>
+      <nav class="nav root">
+        <a href="#home" class="logo"
+          ><img draggable="false" src="Images/Logo.png" alt="Logo"
+        /></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-    </section>
-    <!------------------------Cards----------------------->
-    <section class="cards">
-        <h1>We offer people the best way<br>
-            to eat healthy and delicious food.</h1>
-
-        <div class="row">
-            <div class="cards-col">
-                <img src="Images/card_1.png" alt="Fine Dining">
-            </div>
-            <div class="cards-col">
-                <img src="Images/card_2.png" alt="Expert Chefs">
-            </div>
-            <div class="cards-col">
-                <img src="Images/Card_3.png" alt="SuperFast Delivery">
-            </div>
+      </nav>
+    </header>
+    <section class="landing" id="home">
+      <div class="hero-image">
+        <img draggable="false" src="./Images/vector.png" alt="" />
+      </div>
+      <div class="hero-text">
+        <div class="primary-text">Deliciousness</div>
+        <div class="primary-text dark">In Every Bite!</div>
+        <div class="secondary-text">
+          Providing you with the best of our services.
         </div>
+        <button class="hero-button">
+          Explore Menu
+          <img draggable="false" src="./Images/chevron.png" alt="" />
+        </button>
+      </div>
     </section>
-    <!------------------------About Us--------------------->
-    <section>
-        <div class="about-picture"><img src="Images/food_2.png"></div>
-        <div class="text">
-            <h2>Living well begins<br>
-                with eating well.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-                Praesent dolor nunc, laoreet vitae commoa, semper vitae ligula.</p>
-            <a href="" class="btn"><img src="Images/Button2.png" alt="Button"></a>
-        </div>
-    </section>
-    <!------------------------Footer--------------------->
-    <section class="footer">
-    </section>
-</body>
 
+    <section class="about" id="about">
+      <div class="about-text">
+        <p>We offer people the best way</p>
+        <p>to eat healthy and delicious food.</p>
+      </div>
+      <div class="cards">
+        <img draggable="false" class="img" src="./Images/card_1.png" />
+        <img draggable="false" class="img" src="./Images/card_2.png" />
+        <img draggable="false" class="img" src="./Images/card_3.png" />
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="image">
+        <img draggable="false" src="./Images/food_2.png" alt="" />
+      </div>
+      <div class="text">
+        <div class="primary-text">Living well begins</div>
+        <div class="primary-text dark">with eating well</div>
+        <div class="secondary-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+          Praesent dolor nunc, laoreet vitae commoa, semper vitae ligula.
+        </div>
+        <button class="hero-button">
+          Explore<img draggable="false" src="./Images/chevron.png" alt="" />
+        </button>
+      </div>
+      <img draggable="false" src="./Images/Footer.png" alt="" class="footer" />
+    </section>
+  </body>
 </html>
