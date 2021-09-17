@@ -1,4 +1,4 @@
-*, *::after, *::before{
+/**, *::after, *::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,4 +10,138 @@ html{
 
 body{
     font-size: 1rem;
+}*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'El Messiri', sans-serif;
+    overflow-x: hidden;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(Images/vector.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #9197AE;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #F02D3A ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box {
+    width: 300%;
+    margin-top: 100px;
+    margin-left: 100px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+.text-box h1{
+    font-size: 62px;
+    color: #F02D3A !important;
+    font-weight:bold;
+}
+
+.text-box h2{
+    font-size: 62px;
+    color: #273043 !important;
+    font-weight:bold;
+    line-height: 80px;
+}
+
+.text-box p {
+    /*margin: 10px 0 40px;*/
+    font-size: 14px; 
+    color: #9197AE !important;
+}
+.btn{
+    display: inline-block;
+    position: absolute;
+}
+/* ------Cards------ */
+.cards{
+    margin-top: 3%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+/* ------About Us------ */
+.about-picture{
+    margin-top: -5%;
+    display: flex;
+    margin-left: 5%;
+}
+.text {
+    width: 300%;
+    margin-left: 100px;
+    position: relative;
+    left: 50%;
+}
+.text h2{
+    font-size: 36px;
+    color: #273043 !important;
+    font-weight:bold;
+    line-height: 50px;
+}
+
+.text p {
+    /*margin: 10px 0 40px;*/
+    font-size: 24px; 
+    color: #9197AE !important;
+}
+.footer{
+    padding-top: 15%;
+    width: 100%;
+    background-image: url(Images/Footer.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
 }
